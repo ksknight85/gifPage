@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giphy Page!</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- jQuery link -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row" id="searchBarRow">
+            <!-- Search bar -->
+            <div class="searchBarDiv">
+                <form class="searchbarForm">
+                    <label for="Add a superhero"> Add a superhero</label><br>
+                    <input type="text" class="searchBar" placeholder="Search...">
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="row" id="buttonRow">
+            <div class="gifButtons"></div>
+        </div>
+        <div class="row" id="imagesRow">
+            <div class="col-md-12" id="imagesCol">
+                <div class="gifsImages"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/javascript/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+body {
+    max-width: 100%;
+    font-size: 14pt;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: white;
+    box-sizing: border-box;
+
+
+}
+.container {
+    width: 95%;
+    margin: 20px auto;
+    background-color: aqua;
+}
+#searchBarRow {
+    padding: 10px;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 18pt;
+}
+#buttonRow {
+    padding: 10px;
+    position: relative;
+
+}
+
+.buttons {
+    margin: 5px 5px;
+    width: 200px;
+    height: 50px;
+}
+.gifsImages {
+    position: relative;
+}
+#imagesRow {
+    padding: 10px;
+}
+
+p {
+    width: 110px;
+}
+img {
+    margin: 8px;
+}
