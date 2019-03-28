@@ -36,16 +36,13 @@ $(".submit").on("click", function () {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
+        console.log(response.data[0].images.fixed_height_still.url);
         for (var i = 0; i < displayedGIF; i++) {
             var gifURL = response.data[i].images.fixed_height.url;
             var stillGifURL = response.data[i].images.fixed_height_still.url;
             var rating = response.data[i].rating;
             var newGif = $("<div>");
-            newGif.html("<p>Rating: " + rating + "</p><img src='" + response.data[i].images.fixed_height_still.url + "'/>")
-            newGif.attr("data-state", status);
-            newGif.attr("data-stillURL", stillGifURL);
-            newGif.attr("data-gifURL", gifURL);
-            newGif.html();
+            newGif.html("<p>Rating: " + rating + "</p><img data-state='" + status + "'id='gif' src='" + response.data[i].images.fixed_height_still.url + "' data-stillURL='" + stillGifURL + "'data-gifURL='" + gifURL + "'/>");
             $(".gifsImages").append(newGif);
         }
     });
@@ -69,11 +66,7 @@ $(".gifButtons").on("click", ".buttons", function () {
             var stillGifURL = response.data[i].images.fixed_height_still.url;
             var rating = response.data[i].rating;
             var newGif = $("<div>");
-            newGif.html("<p>Rating: " + rating + "</p><img src='" + response.data[i].images.fixed_height_still.url + "'/>")
-            newGif.attr("data-state", status);
-            newGif.attr("data-stillURL", stillGifURL);
-            newGif.attr("data-gifURL", gifURL);
-            newGif.html();
+            newGif.html("<p>Rating: " + rating + "</p><img data-state='" + status + "'id='gif' src='" + response.data[i].images.fixed_height_still.url + "' data-stillURL='" + stillGifURL + "'data-gifURL='" + gifURL + "'/>");
             $(".gifsImages").append(newGif);
 
         }
